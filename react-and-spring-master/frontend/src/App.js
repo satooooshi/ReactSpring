@@ -2,6 +2,18 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//For material UI
+import Button from '@material-ui/core/Button';
+
+const styles = theme => ({
+    button: {
+        margin: theme.spacing.unit,
+    },
+    input: {
+        display: 'none',
+    },
+});
+
 class App extends Component {
 
     state = {};
@@ -28,6 +40,9 @@ class App extends Component {
                 <p className="App-intro">
                     Hello !To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
+                <Button variant="contained" >
+                    Default
+                </Button>
             </div>
         );
     }
